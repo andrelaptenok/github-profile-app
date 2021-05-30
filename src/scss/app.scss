@@ -1,0 +1,21 @@
+@import 'components/all';
+@import 'libs/normalize';
+@import 'fonts';
+@import 'variables';
+body {
+    background-color: #E5E5E5;
+}
+
+.wrapper {
+    max-width: 1366px;
+}
+
+.content {
+    margin: 30px 60px 20px;
+    @media (max-width: 1024px) {
+        margin: 30px;
+    }
+    @media (max-width: 480px) {
+        margin: 20px 0;
+    }
+}
