@@ -66,9 +66,9 @@ export const GithubState = ({ children }) => {
     const setSearch = () => dispatch({ type: SET_IS_SEARCH });
     const setError = () => dispatch({ type: SET_ERROR });
     const setLoadedPage = () => dispatch({ type: SET_LOADED_PAGE });
-    return ( <
-        GithubContext.Provider value = {
-            {
+    return ( 
+        <GithubContext.Provider 
+        value = {{
                 getSearch,
                 user,
                 getRepos,
@@ -81,8 +81,8 @@ export const GithubState = ({ children }) => {
                 setLoadedPage,
                 isLoadedPage,
                 getPageRepos,
-            }
-        } > { ' ' } { children } { ' ' } <
-        /GithubContext.Provider>
+            }}> 
+            { children }  
+        </GithubContext.Provider>
     );
 };
