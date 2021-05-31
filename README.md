@@ -10,11 +10,10 @@
 
 ## [Demo github-profile-app](https://github-profile-app.vercel.app/)
 
-
 ## Description
 
 <p>
-An application for displaying information about a GitHub user and a list of his repositories.
+An application for displaying information about a GitHub (https://github.com) user and a list of his repositories.
 </p>
 
 ## Stack
@@ -22,12 +21,23 @@ An application for displaying information about a GitHub user and a list of his 
 - ReactJS
 - React Hooks
 - React Pagination
+- Axios
 - SCSS
+
+## Functionality
+
+- The page has a search box for entering the username of the user.
+- When you enter username and press Enter, requests are made to the GitHub API. When receiving responses from the server, the user's data and a list of his repositories are displayed.
+- When you click on the username of a user, his profile opens in a new tab.
+- When you click on the name of the repository, its page should open in a new tab.
+- Shows a separate page (empty state) if the user has no repositories.
+- Shows a separate page (empty state) if the user with username does not exist.
+- Implemented page-by-page browsing of repositories.
 
 ## Project setup
 
 ```
-https://github.com/andrelaptenok/github-profile-app.git
+git clone https://github.com/andrelaptenok/github-profile-app.git
 npm install
 npm run build
 npm start
